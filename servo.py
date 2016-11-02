@@ -1,4 +1,4 @@
-import time
+from time import sleep
 import pyupm_servo as s
 import pyupm_grove as g
 
@@ -6,7 +6,7 @@ servo = s.ES08A(5)
 servo.setAngle(30)
 temp = g.GroveTemp(0)
 print 'Setting servo at home position'
-time.sleep(1)
+sleep(1)
 
 if __name__ == '__main__':
         while True:
@@ -15,4 +15,5 @@ if __name__ == '__main__':
                 servo.setAngle(30)
             else:
                 servo.setAngle(angle)
+            sleep(1.5)
 del servo
