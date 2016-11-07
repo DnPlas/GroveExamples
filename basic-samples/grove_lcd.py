@@ -1,3 +1,8 @@
+# ------------ GROVE LCD RGB ------------  #
+# Basic sample using UPM module for the    #
+# Grove LCD RGB v3.0                       #
+# Daniela Plascencia | daplascen@gmail.com #
+
 import pyupm_i2clcd as lcd
 from time import sleep
 
